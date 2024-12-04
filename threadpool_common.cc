@@ -420,7 +420,7 @@ static ST_FIELD_INFO groups_fields_info[] =
 }  // namespace Show
 
 // bug: TABLE_LIST is not defined
-#define TABLE_LIST TABLE
+#define TABLE_LIST Table_ref
 // typedef TABLE_LIST Table_ref;
 static int groups_fill_table(THD* thd, TABLE_LIST* tables, Item*) {
     if (!all_groups)
